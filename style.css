@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+h1{
+    color:#80FF63;
+}
+nav{
+    background-color: #f1fdee;
+    display: flex;
+    justify-content: flex-end;
+}
+.navegar{
+    text-decoration: none;
+    color: black;
+}
+li{
+    width: 150px;
+    margin: 10px;
+    list-style: none;
+}
+ul{
+    display: flex;
+    margin-right: 300px;
+}
+img{
+    width: 500px;
+    height: 300px;
+}
+header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 250, 250);
+
+}
+.boton{
+    text-decoration: none;
+    color: white;
+    background-color: #80FF63;
+    border-radius: 10px;
+}
+.contacto{
+    color: white;
+    background-color: #80FF63;
+    border-radius: 10px;
+}
