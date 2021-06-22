@@ -2,60 +2,86 @@ body{
     margin: 0;
     font-family: 'Baloo Tammudu 2', cursive;
     font-size: 20px;
-}
-h1{
-    color:#80FF63;
-    font-size: 80px;
+    color: #2e2e31;
 }
 nav{
     background-color: #f1fdee;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
+    position: fixed;
+    width: 100%;
 }
 ul{
     display: flex;
 }
-.navegar{
-    text-decoration: none;
-    color: #000000;
+.ancho-maximo {
+  width: 1100px;
 }
 li{
     margin: 20px;
     list-style: none;
 }
-header{
+.nav-link{
+    text-decoration: none;
+    color: #2e2e31;
+}
+.nav-button{
+    text-decoration: none;
+    color: #ffffff;
+    background-color:rgb(245, 104, 179);
+    align-self: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    border-radius: 30px;
+}
+.presentacion{
     display: flex;
     justify-content: center;
     background-color: #f8aeae;
 }
-.boton{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #80FF63;
-    border-radius: 10px;
-    align-self: flex-start;
+.seccion-1{
+    display:flex;
+    background-color: #cbcbec;
+    padding: 50px;
 }
-img{
-    width: 600px;
-    height: 400px;
-}
-.soy{
-    background-color: #e0cbf3;
+.portada{
     width: 700px;
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    
+    justify-content: center;  
+}
+h1{
+    color:#80FF63;
+    font-size: 80px;
+    line-height: 0px;
+}
+h2{
+    font-size: 40px;
+}
+.derribandomuros{
+    width: 600px;
+    height: 400px;
 }
 .imagen-derribando-muros{
-    background-color: #cbcbec;
-    width: 700px;
-    height: 600px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
+@media screen and (max-width: 1100px){
+    .seccion-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+}
+
 .misconocimientos, .misproyectos{
     display: flex;
     flex-direction: column;
@@ -69,6 +95,7 @@ img{
     justify-content: center;
     align-items: center;
     background-color: #f5deb3;
+    padding: 50px;
    
 }
 .tarjetacontenedora{
@@ -77,11 +104,22 @@ img{
     flex-wrap: wrap;
     background-color: #f1d9d9;  
 }
-.tarjetas{
-    width: 255px;
-    height: 225px;
-    margin: 20px;
-    background-color: #ff0000;
+.tarjetas {
+  width: 260px;
+  height: 230px;
+  background: #ffffff;
+  border: 1px solid #dddfe5;
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono {
+  width: 75px;
+  height: 75px;
 }
 .frase{
     background-color:#80FF63;
@@ -91,23 +129,34 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 .blog{
-width: 50px;
-height: 50px;
+    width: 50px;
+    height: 50px;
 }
-.cuadros{
-    width: 330px;
-    height: 350px;
-    margin: 25px;
-    background-color: #ff0000;
+.frase p, h4{
+    color: white;
+    font-size: 30px;
 }
-.contenedor{
+.contenedor-proyectos{
     width: 1150px;
     display: flex;
     flex-wrap: wrap;
     background-color: #f1d9d9;  
 }
+.portada-proyecto{
+    width: 330px;
+    height: 350px;
+    margin: 25px;
+    border:1px solid red;
+    border-radius: 10px;
+}
+.imagenes{
+    width: 280px;
+    height: 280px;
+}
+
 aside{
     display: flex;
     flex-direction: column;
