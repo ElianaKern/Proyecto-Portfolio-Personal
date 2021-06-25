@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;800&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Eliana Kern</title>
   </head>
@@ -13,121 +16,222 @@
     <nav>
       <ul class="ancho-maximo">
         <li><a href="#hola" class="nav-link">HOLA</a></li>
-        <li><a href="#misconocimientos" class="nav-link">CONOCIMIENTOS</a></li>
-        <li><a href="#misproyectos" class="nav-link">PROYECTOS</a></li>
-        <li><a href="#contactame" class="nav-button">CONTACTO</a></li>
+        <li><a href="#conocimientos" class="nav-link">CONOCIMIENTOS</a></li>
+        <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+        <li><a href="#contacto" class="nav-button">CONTACTO</a></li>
       </ul>
     </nav>
-    
+
     <main>
       <header class="presentacion" id="hola">
-      <div class="ancho-maximo seccion-1">
-      <div class="portada">
-        <h2>¡Hola! Soy</h2>
-        <h1>Eliana Kern</h1>
-        <p>
-          Desarrolladora (en curso), Actríz, amante del arte, la naturaleza y los
-          viajes.
-        </p>
-        <a href="#portfolio" class="nav-button"><span>LO QUE HAGO</span></a>
-      </div>
-      <div class="imagen-derribando-muros">
-        <img src="./undraw_breaking_barriers_vnf3.svg" alt="Derribando Muros" class="derribandomuros" />
-      </div>
-      </div>
+        <div class="presentacion-seccion-1 ancho-maximo">
+          <div class="portada-presentacion">
+            <h2>¡Hola! Soy</h2>
+            <h1>Eliana Kern</h1>
+            <p>
+              Desarrolladora (en curso), Actríz, amante del arte, la naturaleza
+              y los viajes.
+            </p>
+            <a href="#proyectos" class="nav-button"><span>LO QUE HAGO</span></a>
+          </div>
+          <div class="imagen-portada-derribando-muros">
+            <img
+              src="./img/undraw_breaking_barriers_vnf3.svg"
+              alt="Derribando Muros"
+              class="derribandomuros"
+            />
+          </div>
+        </div>
       </header>
 
-    <section class="misconocimientos">
-      <div class="ancho-maximo conocimientos">
-      <h2>Mis Conocimientos</h2>
-      <p>Estos son algunos lenguajes para desarrollar que he aprendido y algunos que pronto aprenderé!</p>
-      </div>
+      <section class="misconocimientos-seccion-2" id="conocimientos">
+        <div class="conocimientos ancho-maximo">
+          <h2>Mis Conocimientos</h2>
+          <p>
+            Estos son algunos lenguajes para desarrollar que he aprendido y
+            algunos que pronto aprenderé!
+          </p>
+        </div>
 
-      <div class="tarjetacontenedora">
-        <div class="tarjetas">
-          <img src="./html5-brands.svg" alt="icono-html5" class="icono">
-          <h3>HTML 5</h3>
+        <div class="tarjetacontenedora">
+          <div class="tarjetas">
+            <img src="./img/html5-brands.svg" alt="icono-html5" class="icono" />
+            <h3>HTML 5</h3>
+          </div>
+          <div class="tarjetas">
+            <img src="./img/css3-plain.svg" alt="icono-css" class="icono" />
+            <h3>CSS 3</h3>
+          </div>
+          <div class="tarjetas">
+            <img src="./img/sass-original.svg" alt="icono-sass" class="icono" />
+            <h3>Sass</h3>
+          </div>
+          <div class="tarjetas">
+            <img
+              src="./img/javascript-plain.svg"
+              alt="icono-JavaScript"
+              class="icono"
+            />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="tarjetas">
+            <img src="./img/react-original.svg" alt="icono-react" class="icono" />
+            <h3>React</h3>
+          </div>
+          <div class="tarjetas">
+            <img src="./img/git-original.svg" alt="icono-git" class="icono" />
+            <h3>GIT</h3>
+          </div>
         </div>
-        <div class="tarjetas">
-          <img src="./css3-plain.svg" alt="icono-css" class="icono">
-          <h3>CSS 3</h3>
-        </div>
-        <div class="tarjetas">
-          <img src="./sass-original.svg" alt="icono-sass" class="icono">
-          <h3>Sass</h3>
-        </div>
-        <div class="tarjetas">
-          <img src="./javascript-plain.svg" alt="icono-JavaScript" class="icono">
-          <h3>JavaScript</h3>
-        </div>
-        <div class="tarjetas">
-          <img src="./react-original.svg" alt="icono-react" class="icono">
-          <h3>React</h3>
-        </div>
-        <div class="tarjetas">
-          <img src="./git-original.svg" alt="icono-git" class="icono">
-          <h3>GIT</h3>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <article class="frase">
-      <div class="jim">
-        <img class="blog"src="./quote-right-solid.svg" alt="comillas de cita">
-        <p>Las cosas buenas que construimos terminan construyendonos</p>
-        <h4>Jim Rohn</h4>
-      </div>
-    </article>
+      <article class="frase">
+        <div class="jim ancho-maximo">
+          <img
+            class="comillas"
+            src="./img/quote-right-solid.svg"
+            alt="comillas de cita"
+          />
+          <p>Las cosas buenas que construimos terminan construyendonos</p>
+          <h4>Jim Rohn</h4>
+        </div>
+      </article>
 
-    <section class="misproyectos">
-      <div class="proyectos">
-      <h2>Mis Proyectos</h2>
-      <p>Estos son algunos de los proyectos que proponen en mi escula Ada, en los cuales iré avanzando!</p>
-      </div>
+      <section class="misproyectos-seccion-3" id="proyectos">
+        <div class="proyectos">
+          <h2>Mis Proyectos</h2>
+          <p>
+            Estos son algunos de los proyectos propuestos en Ada, en
+            los cuales iré avanzando!
+          </p>
+        </div>
 
-      <div class="contenedor-proyectos">
-        <div class="portada-proyecto">
-          <img src="./undraw_breaking_barriers_vnf3.svg" alt="" class="imagenes">
-          <h3>Portfolio</h3>
+        <div class="contenedor-proyectos">
+          <div class="portada-proyecto">
+            <img
+              src="./img/undraw_breaking_barriers_vnf3.svg"
+              alt=""
+              class="imagenes"
+            />
+            <h3>Portfolio</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img src="./img/undraw_both_sides_hbv3.svg" alt="" class="imagenes" />
+            <h3>Generador de memes</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img
+              src="./img/undraw_detailed_examination_joef.svg"
+              alt=""
+              class="imagenes"
+            />
+            <h3>Match 3</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img src="./img/undraw_searching_p5ux.svg" alt="" class="imagenes" />
+            <h3>Controlador de gastos</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img src="./img/undraw_summer_jx06.svg" alt="" class="imagenes" />
+            <h3>Administrador de reuniones</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img
+              src="./img/undraw_watch_application_uhc9 (1).svg"
+              alt=""
+              class="imagenes"
+            />
+            <h3>Todo App</h3>
+          </div>
+          <div class="portada-proyecto">
+            <img src="./img/undraw_netflix_q00o.svg" alt="" class="imagenes" />
+            <h3>Buscador de películas</h3>
+          </div>
         </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_both_sides_hbv3.svg" alt="" class="imagenes">
-          <h3>Generador de memes</h3>
-        </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_detailed_examination_joef.svg" alt="" class="imagenes">
-          <h3>Match 3</h3>
-        </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_searching_p5ux.svg" alt="" class="imagenes">
-          <h3>Controlador de gastos</h3>
-        </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_summer_jx06.svg" alt="" class="imagenes">
-          <h3>Administrador de reuniones</h3>
-        </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_watch_application_uhc9 (1).svg" alt="" class="imagenes">
-          <h3>Todo App</h3>
-        </div>
-        <div class="portada-proyecto">
-          <img src="./undraw_netflix_q00o.svg" alt="" class="imagenes">
-          <h3>Buscador de películas</h3>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <aside>
-      <div class="formulario">
-        <div class="form"></div>
-        <div class="form"></div>
-      </div>
-    </aside>
+      <section class="formulario-de-contacto-seccion-4" id="contacto">
+        <div class="formulario ancho-maximo">
+          <div class="form">
+            <h2 class="titulo-redes">Contactame</h2>
+            <p>
+             Como has podido leer, aun no adquiero todos los conocimientos, pero estoy dispuesta a seguir aprendiendo y con muchas ganas de trabajar en equipo.
+            </p>
+            <a href="#hola" class="link-redes"
+              ><img
+                src="./img/twitter-original.svg"
+                alt="twitter"
+                class="icono-redes"
+              />@EliKern</a
+            >
+            <a href="#hola" class="link-redes"
+              ><img
+                src="./img/github-original.svg"
+                alt="git-hub"
+                class="icono-redes"
+              />@EliKern</a
+            >
+            <a href="#hola" class="link-redes"
+              ><img
+                src="./img/linkedin-original.svg"
+                alt="linkedin"
+                class="icono-redes"
+              />@EliKern</a
+            >
+            <a href="#hola" class="link-redes"
+              ><img
+                src="./img/envelope-solid.svg"
+                alt="gmail"
+                class="icono-redes"
+              />@EliKern</a
+            >
+          </div>
+
+          <div class="form">
+            <h2 class="titulo-redes">Escribime</h2>
+            <form action="" class="contact-form">
+              <div class="form-control control-mediano">
+                <label>Nombre *</label>
+                <input type="text" name="nombre" placeholder="p.ej.: Eliana" />
+              </div>
+              <div class="form-control control-mediano">
+                <label>Apellido *</label>
+                <input type="text" name="apellido" placeholder="p.ej.: Kern" />
+              </div>
+              <div class="form-control">
+                <label>Email *</label>
+                <input
+                  type="mail"
+                  name="email"
+                  placeholder="p.ej.: eliana.kern@gmail.com"
+                />
+              </div>
+              <div class="form-control">
+                <label>Mensaje *</label>
+                <textarea
+                  type="text"
+                  name="mensaje"
+                  placeholder="Escriba un mensaje aquí"
+                  rows="12"
+                  cols="50"
+                />
+                </textarea>
+              </div>
+              <button class="enviar" type="submit">
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-
     <footer>
-
+      <div class="ancho-maximo foot">
+       <a href="#hola" class="foot-link">HOLA</a>
+       <a href="#conocimientos" class="foot-link">CONOCIMIENTOS</a>
+       <a href="#proyectos" class="foot-link">PROYECTOS</a>
+       <a href="#contacto" class="foot-link">CONTACTO</a>
+      </div>
     </footer>
-
   </body>
 </html>
