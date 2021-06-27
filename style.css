@@ -37,6 +37,9 @@ li {
   padding-bottom: 10px;
   border-radius: 30px;
 }
+.nav-button:hover {
+  background-color:rgba(148, 236, 59, 0.835);
+}
 .presentacion {
   display: flex;
   justify-content: center;
@@ -128,7 +131,7 @@ li {
   height: 75px;
 }
 .frase {
-  background-color: #80ff63;
+  background-color: rgba(118, 228, 9, 0.835);
   display: flex;
   justify-content: center;
 }
@@ -153,12 +156,13 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   background-color: #f1d9d9;
+  border: solid 1px blue;
 }
 .portada-proyecto {
   width: 330px;
   height: 350px;
-  margin: 25px;
-  border: 1px solid red;
+  margin: 23px;
+  border: 2px solid red;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -167,7 +171,7 @@ h4 {
   cursor: pointer;
 }
 .portada-proyecto:hover{
-  border: 1px solid rgb(0, 255, 64);
+  border: 2px solid rgb(0, 255, 64);
 }
 .imagenes {
   width: 280px;
@@ -183,12 +187,11 @@ h4 {
   padding:40px;
 }
 .formulario {
-  background-color: #ff6347;
+  background-color: #fb6d2b;
   display: flex;
   justify-content: center;
   border:solid 1px rgb(119, 114, 114);
   border-radius: 20px;
-  box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
 }
 .form {
   flex: 1;
@@ -202,13 +205,19 @@ h4 {
   text-decoration: none;
   color: #2e2e31;
 }
+.link-redes:hover{
+  color: white;
+}
 .titulo-redes {
   line-height: 0px;
   padding: 10px;
 }
-.link-redes .fab, .fas{
-  color: #16c52b;
-  padding: 15px;
+.fab, .fas{
+  color:rgba(118, 228, 9, 0.835);
+  padding: 10px;
+}
+ {
+
 }
 
 .contact-form {
@@ -247,7 +256,7 @@ h4 {
 }
 
 .enviar {
-    background: blue;
+    background-color: #f568b3;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 30px;
@@ -260,17 +269,55 @@ h4 {
     border: none;
     cursor: pointer;
 }
-
+.enviar:hover {
+  background-color: rgba(148, 236, 59, 0.835);
+}
 footer{
-    background-color: chartreuse;
+    background-color: rgba(118, 228, 9, 0.835);
+    display: flex;
+    justify-content: center;
+    border: solid 1px red;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .foot {
-
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .foot-link{
     text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+.iconos-del-footer{
+ padding-top: 40px;
+ padding-bottom: 20px;
+}
+.iconos-del-footer .fab{
+  background-color: white;
+  border-radius: 20px;
+}
+.iconos-del-footer .fas{
+  background-color: white;
+  border-radius:20px;
+}
+.iconos-del-footer .fab:hover{
+  background-color: rgba(118, 228, 9, 0.835);
+  color: white;
+  padding: 9px;
+  border: 1px solid white;
+}
+.iconos-del-footer .fas:hover{
+  background-color: rgba(118, 228, 9, 0.835);
+  color: white;
+  padding: 9px;
+  border: 1px solid white;
 }
 
+h5{
+  color: white;
+}
 @media screen and (max-width: 500px) {
   .control-mediano {
     width: 100%;
