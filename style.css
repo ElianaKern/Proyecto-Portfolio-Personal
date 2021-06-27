@@ -1,8 +1,8 @@
 body, ul {
   margin: 0;
-  font-family: 'Baloo Tammudu 2', cursive;
-  font-size: 20px;
-  color: #2e2e31;
+  font-family: 'Baloo Tammudu 2',cursive;
+  font-size: 18px;
+  color: #49494b;
 }
 nav {
   background-color: #f1fdee;
@@ -30,10 +30,11 @@ li {
 .nav-button {
   text-decoration: none;
   color: #ffffff;
-  background-color: rgb(245, 104, 179);
+  background-color: #f568b3;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 30px;
 }
 .presentacion {
@@ -89,7 +90,8 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #40e0d0;
+  /*background-color: #38f5e2;*/
+   background-color: #f1d9d9;
 }
 .conocimientos,
 .proyectos{
@@ -97,7 +99,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3bc57;
+  /*background-color: #f3bc57;*/
   padding: 50px;
 }
 .tarjetacontenedora {
@@ -137,9 +139,9 @@ li {
   align-items: center;
   padding: 50px;
 }
-.comillas {
-  width: 50px;
-  height: 50px;
+.jim .fas{
+  font-size: 45px;
+  color: white;
 }
 .frase p,
 h4 {
@@ -196,10 +198,6 @@ h4 {
   align-items: flex-start;
   padding: 40px;
 }
-.icono-redes {
-  width: 20px;
-  height: 20px;
-}
 .link-redes {
   text-decoration: none;
   color: #2e2e31;
@@ -207,6 +205,10 @@ h4 {
 .titulo-redes {
   line-height: 0px;
   padding: 10px;
+}
+.link-redes .fab, .fas{
+  color: #16c52b;
+  padding: 15px;
 }
 
 .contact-form {
