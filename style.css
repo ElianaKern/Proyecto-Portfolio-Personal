@@ -1,6 +1,7 @@
-body, ul {
+body,
+ul {
   margin: 0;
-  font-family: 'Baloo Tammudu 2',cursive;
+  font-family: 'Baloo Tammudu 2', cursive;
   font-size: 18px;
   color: #49494b;
 }
@@ -36,9 +37,10 @@ li {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 30px;
+  align-self: flex-start;
 }
 .nav-button:hover {
-  background-color:rgba(148, 236, 59, 0.835);
+  background-color: rgba(148, 236, 59, 0.835);
 }
 .presentacion {
   display: flex;
@@ -52,23 +54,23 @@ li {
   padding: 50px;
 }
 .portada-presentacion {
-  width: 700px;
-  height: 600px;
+  max-width: 700px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
- h1 {
+h1 {
   color: #80ff63;
   font-size: 80px;
   line-height: 0px;
 }
- h2 {
+h2 {
   font-size: 40px;
 }
 .derribandomuros {
-  width: 600px;
-  height: 400px;
+  max-width: 600px;
+  max-height: 400px;
 }
 .imagen-portada-derribando-muros {
   display: flex;
@@ -94,16 +96,18 @@ li {
   justify-content: center;
   align-items: center;
   /*background-color: #38f5e2;*/
-   background-color: #f1d9d9;
+  background-color: #f1d9d9;
 }
 .conocimientos,
-.proyectos{
+.proyectos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /*background-color: #f3bc57;*/
   padding: 50px;
+  text-align: center;
+  max-width: 400px;
 }
 .tarjetacontenedora {
   max-width: 885px;
@@ -123,7 +127,7 @@ li {
   justify-content: center;
   align-items: center;
 }
-.tarjetas:hover{
+.tarjetas:hover {
   border: 1px solid #16c52b;
 }
 .icono {
@@ -140,10 +144,17 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 800px;
   padding: 50px;
 }
-.jim .fas{
+.jim {
   font-size: 45px;
+  color: white;
+}
+
+.jim .fa-quote-right {
+  background: none;
   color: white;
 }
 .frase p,
@@ -152,14 +163,14 @@ h4 {
   font-size: 30px;
 }
 .contenedor-proyectos {
-  max-width: 1150px;
+  max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
   background-color: #f1d9d9;
   border: solid 1px blue;
 }
 .portada-proyecto {
-  width: 330px;
+  width: 310px;
   height: 350px;
   margin: 23px;
   border: 2px solid red;
@@ -170,7 +181,7 @@ h4 {
   align-items: center;
   cursor: pointer;
 }
-.portada-proyecto:hover{
+.portada-proyecto:hover {
   border: 2px solid rgb(0, 255, 64);
 }
 .imagenes {
@@ -178,22 +189,23 @@ h4 {
   height: 280px;
 }
 
-.formulario-de-contacto-seccion-4{
+.formulario-de-contacto-seccion-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f7ecd7;
-  padding:40px;
+  padding: 40px;
 }
 .formulario {
   background-color: #fb6d2b;
   display: flex;
   justify-content: center;
-  border:solid 1px rgb(119, 114, 114);
+  border: solid 1px rgb(119, 114, 114);
   border-radius: 20px;
 }
-.form {
+.form-contactame,
+.form-escribime {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -201,23 +213,37 @@ h4 {
   align-items: flex-start;
   padding: 40px;
 }
-.link-redes {
-  text-decoration: none;
-  color: #2e2e31;
-}
-.link-redes:hover{
-  color: white;
-}
 .titulo-redes {
   line-height: 0px;
   padding: 10px;
 }
-.fab, .fas{
-  color:rgba(118, 228, 9, 0.835);
-  padding: 10px;
+.contenedor-link-redes {
+  display: flex;
 }
- {
 
+.contenedor-link-redes i {
+  margin: 10px;
+}
+
+.link-redes {
+  text-decoration: none;
+  color: #2e2e31;
+}
+.fab,
+.fas {
+  color: rgba(118, 228, 9, 0.835);
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+.contenedor-link-redes:hover .fab,
+.contenedor-link-redes:hover .fas {
+  color: white;
+  background-color: rgba(118, 228, 9, 0.835);
+}
+
+.contenedor-link-redes:hover .link-redes {
+  color: rgba(118, 228, 9, 0.835);
 }
 
 .contact-form {
@@ -231,7 +257,6 @@ h4 {
   flex-direction: column;
   width: 100%;
 }
-
 .control-mediano {
   width: calc(50% - 10px);
 }
@@ -256,66 +281,59 @@ h4 {
 }
 
 .enviar {
-    background-color: #f568b3;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    border-radius: 30px;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #f568b3;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
 }
 .enviar:hover {
   background-color: rgba(148, 236, 59, 0.835);
 }
-footer{
-    background-color: rgba(118, 228, 9, 0.835);
-    display: flex;
-    justify-content: center;
-    border: solid 1px red;
-    padding-top: 70px;
-    padding-bottom: 70px;
+footer {
+  background-color: rgba(118, 228, 9, 0.835);
+  display: flex;
+  justify-content: center;
+  border: solid 1px red;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .foot {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.foot-link{
-    text-decoration: none;
-    padding: 15px;
-    color: white;
-}
-.iconos-del-footer{
- padding-top: 40px;
- padding-bottom: 20px;
-}
-.iconos-del-footer .fab{
-  background-color: white;
-  border-radius: 20px;
-}
-.iconos-del-footer .fas{
-  background-color: white;
-  border-radius:20px;
-}
-.iconos-del-footer .fab:hover{
-  background-color: rgba(118, 228, 9, 0.835);
+.foot-link {
+  text-decoration: none;
+  padding: 15px;
   color: white;
-  padding: 9px;
-  border: 1px solid white;
 }
-.iconos-del-footer .fas:hover{
+.iconos-del-footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border: solid 1px red;
+}
+
+.iconos-del-footer a {
+  margin: 10px;
+}
+
+.iconos-del-footer .fab:hover,
+.iconos-del-footer .fas:hover {
   background-color: rgba(118, 228, 9, 0.835);
   color: white;
   padding: 9px;
   border: 1px solid white;
 }
 
-h5{
+h5 {
   color: white;
 }
 @media screen and (max-width: 500px) {
