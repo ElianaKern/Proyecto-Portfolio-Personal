@@ -9,7 +9,7 @@ nav {
   background-color: #f1fdee;
   box-shadow: 0 0 20px 0 #c9f59ed5;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   position: fixed;
   width: 100%;
 }
@@ -19,6 +19,10 @@ nav ul {
   padding-top: 10px;
   padding-bottom: 10px;
   width: 1100px;
+}
+nav a:focus {
+  box-shadow: 0 0 20px 0 rgb(245, 104, 179);
+  border-radius: 10px;
 }
 .ancho-maximo {
   max-width: 1100px;
@@ -33,7 +37,7 @@ li {
 }
 .nav-button {
   text-decoration: none;
-  color:#49494b;
+  color: #49494b;
   background-color: #94ec3bd5;
   padding-left: 18px;
   padding-right: 18px;
@@ -44,11 +48,11 @@ li {
   align-self: flex-start;
 }
 .nav-button:hover {
-  background-color:#f568b3;
+  background-color: #f568b3;
   color: #ffffff;
   border: solid 2px #94ec3bd5;
 }
-.portada-presentacion .nav-button{
+.portada-presentacion .nav-button {
   text-decoration: none;
   color: #ffffff;
   background-color: #f568b3;
@@ -60,8 +64,8 @@ li {
   border: solid 2px #94ec3bd5;
   align-self: flex-start;
 }
-.portada-presentacion .nav-button:hover{
-  background-color:#94ec3bd5;
+.portada-presentacion .nav-button:hover {
+  background-color: #94ec3bd5;
   border: solid 2px #f568b3;
 }
 .presentacion {
@@ -101,7 +105,7 @@ h2 {
   align-items: center;
   width: 100%;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1098px) {
   .presentacion-seccion-1 {
     display: flex;
     flex-direction: column;
@@ -113,16 +117,15 @@ h2 {
   }
 }
 
-@media screen and (max-width: 600px){
-  h1{
+@media screen and (max-width: 600px) {
+  h1 {
     font-size: 50px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
-
 }
-  
+
 .misconocimientos-seccion-2,
 .misproyectos-seccion-3 {
   display: flex;
@@ -147,12 +150,12 @@ h2 {
   max-width: 885px;
   display: flex;
   flex-wrap: wrap;
-  background-color:#f1d9d9;
+  background-color: #f1d9d9;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 880px){
-  .tarjetacontenedora{
-  justify-content: center;
+@media screen and (max-width: 880px) {
+  .tarjetacontenedora {
+    justify-content: center;
   }
 }
 .tarjetas {
@@ -186,7 +189,7 @@ h2 {
   align-items: center;
   text-align: center;
   max-width: 800px;
-  padding: 50px;
+  padding: 50px 25px;
 }
 .jim {
   font-size: 45px;
@@ -203,14 +206,14 @@ h4 {
   font-size: 30px;
 }
 .contenedor-proyectos {
-  max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
   background-color: #f1d9d9;
+  padding-bottom: 40px;
 }
-@media screen and (max-width: 1094px){
-  .contenedor-proyectos{
-  justify-content: center;
+@media screen and (max-width: 1094px) {
+  .contenedor-proyectos {
+    justify-content: center;
   }
 }
 .portada-proyecto {
@@ -232,20 +235,20 @@ h4 {
   width: 280px;
   height: 280px;
 }
+.portada-portfolio {
+  padding-top: 20px;
+}
 
 .formulario-de-contacto-seccion-4 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #faf7f1;
-  padding: 40px;
   min-height: 100vh;
 }
 .formulario {
-  background-color:#f8f1f1;
+  background-color: #f8f1f1;
   display: flex;
-  justify-content: center;
   border: solid 1px #94ec3bd5;
   border-radius: 20px;
   box-shadow: 0 0 29px 0 rgb(134 134 134 / 25%);
@@ -263,14 +266,9 @@ h4 {
   line-height: 0px;
   padding: 10px;
 }
-.contenedor-link-redes {
-  display: flex;
-}
-
 .contenedor-link-redes i {
   margin: 10px;
 }
-
 .link-redes {
   text-decoration: none;
   color: #2e2e31;
@@ -320,19 +318,20 @@ h4 {
   border: none;
 }
 .form-control textarea {
-  background-color:#dcdcf0 ;
+  background-color: #dcdcf0;
   min-height: 40px;
   border-radius: 20px;
   padding: 10px;
   border: none;
 }
-input:focus, textarea:focus{
-box-shadow: 0 0 20px 0 rgb(245, 104, 179);
-outline: none;
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 20px 0 rgb(245, 104, 179);
+  outline: none;
 }
 
 .enviar {
-  background-color:#94ec3bd5;
+  background-color: #94ec3bd5;
   border: 2px solid #f568b3;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -378,7 +377,7 @@ footer {
 
 .iconos-del-footer .fab:hover,
 .iconos-del-footer .fas:hover {
-  background-color:#94ec3bd5;
+  background-color: #94ec3bd5;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
@@ -390,8 +389,8 @@ h5 {
   .control-mediano {
     width: 100%;
   }
-  .foot-link{
-    padding:5px;
+  .foot-link {
+    padding: 5px;
     font-size: 16px;
   }
 }
@@ -399,5 +398,30 @@ h5 {
 @media screen and (max-width: 900px) {
   .formulario {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .formulario,
+  .contenedor-proyectos {
+    max-width: 320px;
+  }
+  .form-control {
+    max-width: 250px;
+  }
+  .form-contactame,
+  .form-escribime {
+    padding: 30px;
+  }
+  .link-redes {
+    font-size: 16px;
+  }
+  .links-del-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 40px;
   }
 }
