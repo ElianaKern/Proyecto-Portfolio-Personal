@@ -56,12 +56,15 @@ li {
   text-decoration: none;
   color: #ffffff;
   background-color: #f568b3;
+  /* se puede resumir asi:
+  padding: 8px 18px; */
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 30px;
   border: solid 2px #94ec3bd5;
+  /* innecesario, su contenedor no tiene flex */
   align-self: flex-start;
 }
 .portada-presentacion .nav-button:hover {
@@ -80,7 +83,9 @@ li {
   padding: 50px;
 }
 .portada-presentacion {
+  /* al tener flex esta orden se ignora, el elemento ocupa el 50% de su espacio al estar al lado de la imagen */
   width: 100%;
+  /* preferible que el alto este dado por los elementos dentro del contenedor, el padding y el margin */
   min-height: 600px;
   display: flex;
   flex-direction: column;
@@ -95,6 +100,7 @@ h2 {
   font-size: 40px;
 }
 .derribandomuros {
+  /* mismo comentario que en portada-presentacion. recorda usar guiones en tus nombres de clase */
   width: 100%;
   max-width: 600px;
   max-height: 500px;
@@ -133,6 +139,7 @@ h2 {
   justify-content: center;
   align-items: center;
   background-color: #f1d9d9;
+  /* innecesario, su contenido es mas que 100vh */
   min-height: 100vh;
 }
 .conocimientos,
@@ -231,10 +238,12 @@ h4 {
 .portada-proyecto:hover {
   border: 2px solid #94ec3bd5;
 }
+/* tus imagenes no deberian tener ancho fijo */
 .imagenes {
   width: 280px;
   height: 280px;
 }
+/* por que este elemento no tiene la clase de las imagenes? */
 .portada-portfolio {
   padding-top: 20px;
 }
@@ -244,6 +253,7 @@ h4 {
   justify-content: center;
   align-items: center;
   background-color: #faf7f1;
+  /* innecesario */
   min-height: 100vh;
 }
 .formulario {
