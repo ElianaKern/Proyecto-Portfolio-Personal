@@ -9,7 +9,7 @@ Lo realice con diseño responsive hasta 320px.***
 Acá les comparto el enlace del proyecto: <https://elianakern.github.io/Proyecto-Portfolio-Personal/>
 ___
 
-#####Contenidos:
+##### Contenidos:
 - Nav con links de Navegación.
 - Header con presentación.
 - Sección de Conocimientos.

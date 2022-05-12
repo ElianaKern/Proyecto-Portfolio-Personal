@@ -20,6 +20,36 @@ nav ul {
   padding-bottom: 10px;
   width: 1100px;
 }
+.menu-hamburguesa{
+    display: none;
+  }
+.menu-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
+  height: 100%;
+  position:fixed;
+  top:0px;
+  right: 0px;
+}
+.menu-mobile h2{
+  font-size: 30px;
+  text-align: center;
+}
+.menu-mobile ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fa-window-close{
+  font-size: 30px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.oculto-menu-mobile{
+  display: none;
+}
 nav a:focus {
   box-shadow: 0 0 20px 0 rgb(245, 104, 179);
   border-radius: 10px;
@@ -114,6 +144,9 @@ h2 {
   }
   nav {
     display: none;
+  }
+  .menu-hamburguesa{
+    display: flex;
   }
 }
 
